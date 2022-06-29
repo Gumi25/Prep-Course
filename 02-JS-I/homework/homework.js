@@ -142,38 +142,45 @@ function elevarAlCubo(num) {
   // Tu código:
   let cubo = num * num * num;
     return cubo;
+    //Otra manera: return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   return Math.pow(num, exponent);
+  // Otra manera: return num ** exponent;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  return Math.round(num); //Round Redondea
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  return Math.ceil (num); //Ceil redondea al numero entero mas proximo hacia arriba
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
-}
+  return Math.random(numeroRandom);
+} 
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+if (numero > 0) 
+  return "Es positivo";
+else if (numero < 0)
+  return "Es negativo";
+else
+return false;
 }
 
 function agregarSimboloExclamacion(str) {
