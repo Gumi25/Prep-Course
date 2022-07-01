@@ -3,6 +3,8 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  // un array es una cajita []
+  return array [0]
 }
 
 
